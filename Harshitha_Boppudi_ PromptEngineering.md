@@ -12,15 +12,9 @@
 
 \---
 
-
-
 #### **## Part 1: Prompt Design \& Iteration**
 
-
-
 ##### \### **1.1 Scenario A: Technical Explanation**
-
-###### 
 
 ###### \*\*Goal:\*\* Explain the concept of "recursion" to a 10-year-old.
 
@@ -348,41 +342,22 @@
 
 ###### | Version | Prompt                         | What Changed      | Why This Improved the Output                       |
 
-###### |---------|--------------------------------|-------------------|----------------------------------------------------|
-
-###### 
-
+###### |---------|--------------------------------|-------------------|---------------------------------------------------
 ###### | V1      | "Explain recursion to a        |N/A — baseline     |Output was technically correct but dry and abstract 
-
-###### &#x20;            10-year-old."                                      ; no story, no visual hook.                         |
-
-###### &#x20;            
-
-###### &#x20;         
+###### &#x20;       10-year-old."                                      ; no story, no visual hook.                         |
 
 ###### | V2      | Added friendly teacher role + |Role assignment;     | The teacher persona shifted tone to warmer and more 
-
-###### &#x20;           analogy request + 150-word     analogy requirement;   accessible. Requesting an analogy forced a concrete                       
-
-###### &#x20;            limit                         word limit added       comparison rather than abstract definition.
-
-###### &#x20;                                                                 The word limit prevented rambling.                |
-
-###### &#x20;              
+###### &#x20;       analogy request + 150-word    analogy requirement;   accessible. Requesting an analogy forced a concrete             ###### &#x20;       limit                         word limit added       comparison rather than abstract definition.
+###### &#x20;                                                             The word limit prevented rambling.                |
 
 ###### | V3      | Specified the mirror analogy; | Pre-selected best   |  Providing the specific analogy eliminated guesswork
+###### &#x20;      added "imagine this…" opening   analogy ; added        and produced a vivid mental image.The structural
+###### &#x20;      instruction; required closing   structural cues        cues created narrative flow. The ending question
+###### &#x20;      question                        (hook + question);     added pedagogical depth and engagement.          |
+###### &#x20;                                       slight word-limit 
+###### &#x20;                                        increase 
 
-###### &#x20;           added "imagine this…" opening   analogy ; added        and produced a vivid mental image.The structural
-
-###### &#x20;           instruction; required closing   structural cues        cues created narrative flow. The ending question
-
-###### &#x20;           question                        (hook + question);     added pedagogical depth and engagement.          |
-
-###### &#x20;                                           slight word-limit 
-
-###### &#x20;                                           increase 
-
-###### &#x20;               
+             
 
 ###### 
 
@@ -395,69 +370,39 @@
 ###### |---------|--------------------------|---------------------------|------------------------------------------------------------------|
 
 ###### | V1      | "Write an email declining| N/A — baseline            |Output was cold, overly brief, and felt like a form
-
-###### &#x20;            a job offer."                                         letter with no warmth.                              
-
+###### &#x20;       a job offer."                                         letter with no warmth.                              
 ###### 
-
 ###### | V2      | Named company (TechNova);| Company name; explicit    | Naming the company made the email feel personalized.
-
-###### &#x20;           gave reason (accepted      reason; tone directive      Giving a reason helped generate a coherent narrative.
-
-###### &#x20;           another offer); requested                              The tone request shifted output from cold to warmer,
-
-###### &#x20;           stay-in-touch tone                                     though the ending remained weak.                    
+###### &#x20;      gave reason (accepted      reason; tone directive      Giving a reason helped generate a coherent narrative.
+###### &#x20;      another offer); requested                              The tone request shifted output from cold to warmer,
+###### &#x20;      stay-in-touch tone                                     though the ending remained weak.                    
 
 ###### 
+###### | V3      | Added career coach role; | Role added (career coach); | The career coach role anchored the model in professional way. 
+###### &#x20;       listed 5 specific         numbered content             Numbered requirements acted as a checklist ensuring all                           structural requirements;   requirements; length        essential elements appeared.                                 ###### &#x20;       set tone + paragraph       constraint (4 paragraphs)     The paragraph constraint enforced conciseness. |
+                    count
+###### &#x20;               
 
-###### | V3      | Added career coach role; | Role added (career coach); | The career coach role anchored the model in professional writing.
-
-###### &#x20;            listed 5 specific         numbered content             Numbered requirements acted as a checklist ensuring all essential
-
-###### &#x20;           structural requirements;   requirements; length         elements appeared. The paragraph constraint enforced conciseness. |
-
-###### &#x20;           set tone + paragraph       constraint (4 paragraphs)
-
-###### &#x20;           count                           
-
-###### &#x20;                                      
-
-###### &#x20;                                      
-
-###### &#x20;              
-
+              
+                     
 ###### 
-
 ###### \#### Scenario C — Marketing Tagline
-
 ###### 
 
 ###### | Version | Prompt                        | What Changed                           | Why This Improved the Output                                          |
 
-###### |---------|-------------------------------|----------------------------------------|------------------------------------------------------------|
+###### |---------|-------------------------------|----------------------------------------|------------------------------------------|
 
-###### | V1      | "Write a marketing            |  N/A — baseline                        | Single generic tagline with no brand identity or emotional                                
+###### | V1      | "Write a marketing            |  N/A — baseline                        | Single generic tagline with no brand                             tagline for an                                                          identity or emotional  resonance. |                              eco-friendly water bottle."
+###### &#x20;                                                                    
 
-###### &#x20;            tagline for an                                                          resonance. |
 
-###### &#x20;            eco-friendly water bottle." 
-
+###### | V2      | Named brand (Ripple); added   | Brand name; brand values; quantity     | Brand name gave an anchor. 
+###### &#x20;      values; requested 5 options     constrained the creative                  Requesting 5 options produced variety,
+                    requested .                     space usefully.                          but outputs still
+###### &#x20;                                                                                leaned on sustainability clichés
+                                                                         
 ###### 
-
-###### | V2      | Named brand (Ripple); added 
-
-###### &#x20;           values; requested 5 options   | Brand name; brand values; quantity     | Brand name gave an anchor. Values constrained the creative  
-
-###### &#x20;                                           requested .                              space usefully.
-
-###### &#x20;                                                                                    Requesting 5 options produced variety, but outputs still 
-
-###### &#x20;                                                                                    leaned on sustainability clichés.
-
-###### &#x20;                                                                                    
-
-###### 
-
 ###### | V3      | Added award-winning           |Expert role; target demographic;        | The expert role elevated creative ambition. The cliché ban     
 
 ###### &#x20;           copywriter role; specified     brand differentiators;                    forced the model away from lazy defaults. Specifying wordplay
